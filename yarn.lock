@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@squidit/css@1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@squidit/css/-/css-1.1.7.tgz#27dcb52d0eb4708cd4bada8326df12667bf623d0"
+  integrity sha512-uQmgqoVBBLbbGjYUsb83M9B/BMJm3uUhw578c1yH8RuxWfD/f5rLmL+FBCJunWTeSDhGhXsfkN/7rQgNS3lCJw==
+
 esbuild@^0.12.17:
   version "0.12.29"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.29.tgz#be602db7c4dc78944a9dbde0d1ea19d36c1f882d"
