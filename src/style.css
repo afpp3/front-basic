@@ -1,3 +1,90 @@
 body {
   background: #fff;
 }
+
+.my-card {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-card img {
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px -5px #31353b;
+
+  background-position: center center;
+  background-size: cover;
+
+  height: 16rem;
+  width: 200px;
+}
+
+.card-hover {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 2px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  width: 200px;
+
+  border-radius: 5px;
+}
+
+.my-card a:hover + .card-hover {
+  pointer-events: none;
+  opacity: 1;
+  display: flex;
+}
+
+.card-hover--icons {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  animation: show-up 550ms forwards;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.card-hover--icons span {
+  margin-left: 8px;
+}
+
+[data-js="loader"].hide {
+  display: none;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ee7177;
+  height: 3rem;
+
+  color: #c4ecf9;
+  font-weight: bold;
+
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px -5px #31353b;
+}
+
+.error-message.hide {
+  display: none;
+}
